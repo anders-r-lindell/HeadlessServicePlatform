@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Headless.ServicePlatform.Api.Contentful\Headless.ServicePlatform.Api.Contentful.csproj" />
+    <ProjectReference Include="..\Headless.ServicePlatform.Api.Moltin\Headless.ServicePlatform.Api.Moltin.csproj" />
+    <ProjectReference Include="..\Headless.ServicePlatform.Api.RESTCountries\Headless.ServicePlatform.Api.RESTCountries.csproj" />
+    <ProjectReference Include="..\Headless.ServicePlatform.Infrastructure\Headless.ServicePlatform.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FakeItEasy" Version="4.5.1" />
+    <PackageReference Include="FluentAssertions" Version="5.3.0" />
+    <PackageReference Include="Microsoft.AspNetCore.TestHost" Version="2.0.2" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.7.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="NUnit" Version="3.10.1" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.10.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Headless.ServicePlatform.Api.Contentful\Headless.ServicePlatform.Api.Contentful.csproj" />
+    <ProjectReference Include="..\Headless.ServicePlatform.Api.RESTCountries\Headless.ServicePlatform.Api.RESTCountries.csproj" />
+    <ProjectReference Include="..\Headless.ServicePlatform.Infrastructure\Headless.ServicePlatform.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
